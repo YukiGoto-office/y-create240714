@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>【法人向け】デザイナーのフルリモート派遣｜クリエイター専門のユウクリ</title>
+    <meta name="keywords" content="フルリモート,派遣,オンライン,デザイナー">
+    <meta name="description" content="グラフィックデザイナーやWebデザイナーを始めとした、全国のデザイナーをフルリモートで派遣！お問合せから就業までオンライン完結。Webマーケティング人材不足や制作会社のリソース不足の解決法として、ぜひご利用ください。">
+    <meta property="og:url" content="https://www.y-create.co.jp/client/lp/full_remote" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="【法人向け】デザイナーのフルリモート派遣｜クリエイター専門のユウクリ" />
+    <meta property="og:description" content="グラフィックデザイナーやWebデザイナーを始めとした、全国のデザイナーをフルリモートで派遣！お問合せから就業までオンライン完結。Webマーケティング人材不足や制作会社のリソース不足の解決法として、ぜひご利用ください。" />
+    <meta property="og:site_name" content="クリエイティブ人材派遣・紹介・業務委託のユウクリ" />
+    <meta property="og:image" content="img/OGP.png" />
+    <link rel="stylesheet" media="all" href="css/ress.min.css" />
+    <link rel="stylesheet" media="all" href="css/style.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/style.js"></script>
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5PNRKP');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/shared/images/favicon.ico" type="image/x-icon" />
+
+    <script>
+        $(function() {
+            var headerHeight = $('header').outerHeight();
+            var windowWidth = window.innerWidth;
+            var urlHash = location.hash;
+            if (urlHash) {
+                $('body,html').stop().scrollTop(0);
+                setTimeout(function() {
+                    var target = $(urlHash);
+                    var position = target.offset().top - 150;
+                    $('body,html').stop().animate({
+                        scrollTop: position
+                    }, 1000, 'swing');
+                }, 100);
+            }
+            $('a[href^="#"]').click(function() {
+                var speed = 400; // ミリ秒
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var w = window.innerWidth;
+                var position = target.offset().top - 150;
+
+                if (w <= 768) {
+                    $('body,html').animate({
+                        scrollTop: position
+                    }, 1000, 'swing');
+                } else {
+                    $('body,html').animate({
+                        scrollTop: position
+                    }, 1000, 'swing');
+                }
+                return false;
+            });
+
+            $(window).on("load scroll resize", function() {
+
+                var st = $(window).scrollTop();
+                var wh = $(window).height();
+
+                $('.scroll-item').each(function(i) {
+                    var tg = $(this).offset().top;
+                    var id = $(this).attr('id');
+
+                    if (st > tg - wh + (wh / 2)) {
+                        $("#navi a").removeClass("is-active");
+                        var link = $("#navi a[href *= " + id + "]");
+                        $(link).addClass("is-active");
+                    }
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body class="top">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PNRKP"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div class="container header">
+            <h1 class="header-logo"><a href="/"><img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="ユウクリ" class="header-logo_normal"><img src="img/logo-white.png" srcset="img/logo-white.png 1x, img/logo-white@2x.png 2x" alt="ユウクリ" class="header-logo_white sp"></a></h1>
+            <nav>
+                <div class="menu cross menu--2">
+                    <label>
+                        <input type="checkbox">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
+                            <path class="line--2" d="M0 50h99" />
+                            <path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
+                        </svg>
+                    </label>
+                </div>
+                <div id="navi">
+                    <ul>
+                        <li><a href="#home" class="is-active">ホーム</a></li>
+                        <li><a href="#service">サービスの特徴</a></li>
+                        <li><a href="#flow">ご利用の流れ</a></li>
+                        <li><a href="#faq">よくある質問</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-box">
+                <a href="/" class="contact-button white">デザイナーの方はこちら</a>
+                <a href="inquiry.html" class="contact-button">いますぐお問合せ</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="home" class="scroll-item">
+            <section class="mainimg gray-back" id="mv">
+                <div class="container">
+                    <div class="mainimg-text">
+                        <h1>必要なときに<br>
+                            ピンポイントな人材を派遣</h1>
+                        <h2>ハイスキルなプロデザイナーが母集団！</h2>
+                        <p class="mainimg-mvlogo pc"><img src="img/mv-logo.png" srcset="img/mv-logo.png 1x, img/mv-logo@2x.png 2x" alt="ユウクリ"></p>
+                    </div>
+                    <div class="mainimg-img">
+                        <img src="img/mv01.png" srcset="img/mv01.png 1x, img/mv01@2x.png 2x" alt="" class="mainimg-mv01 pc"><img src="img/mv01-sp.png" srcset="img/mv01-sp.png 1x, img/mv01-sp@2x.png 2x" alt="" class="mainimg-mv01 sp">
+                        <img src="img/mv02.png" srcset="img/mv02.png 1x, img/mv02@2x.png 2x" alt="" class="mainimg-mv02">
+                    </div>
+                    <ul class="mainimg-list">
+                        <li class="mainimg-item">・デザイナー人材不足解消</li>
+                        <li class="mainimg-item">・制作会社のリソース不足解消</li>
+                    </ul>
+                    <p class="mainimg-mvlogo sp"><img src="img/mv-logo.png" srcset="img/mv-logo.png 1x, img/mv-logo@2x.png 2x" alt="ユウクリ"></p>
+                </div>
+            </section>
+            <div class="contactset container">
+                <a href="inquiry.html" class="contact-button">いますぐお問合せ</a>
+            </div>
+
+            <section id="problem" class="gray-back">
+                <h2><small>現在、貴社のデザイン業務において</small>こんなお悩みは<br class="sp">ありませんか？</h2>
+                <div class="container center">
+                    <div class="row">
+                        <div class="col span-4">
+                            <img src="img/img-problem01.png" srcset="img/img-problem01.png 1x, img/img-problem01@2x.png 2x" alt="">
+                            <div>
+                                <h3>即戦力のWebデザイナーが<br>
+                                    不足している</h3>
+                                <p>社員の退職や産休などでWebデザインができる人材が不足している。社員の採用もうまくいかずリソース不足。</p>
+                            </div>
+                        </div>
+                        <div class="col span-4">
+                            <img src="img/img-problem02.png" srcset="img/img-problem02.png 1x, img/img-problem02@2x.png 2x" alt="">
+                            <div>
+                                <h3>外部に発注するための<br>
+                                    事前準備が大変</h3>
+                                <p>フリーランスに発注する際の事前準備が大変。また、ちゃんと業務が進んでいるか、納期を守ってくれるかなども不安。</p>
+                            </div>
+                        </div>
+                        <div class="col span-4">
+                            <img src="img/img-problem03.png" srcset="img/img-problem03.png 1x, img/img-problem03@2x.png 2x" alt="">
+                            <div>
+                                <h3>派遣社員の受け入れが<br>
+                                    初めてで不安</h3>
+                                <p>派遣社員の受け入れを検討しているが、派遣法やクリエイティブ職ならではの日々の管理が不安。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solution">
+                <div class="container">
+                    <h2><small>上記のお悩みは</small>ユウクリの<br class="jp">フルリモート派遣で解決できます！</h2>
+                    <div class="row solution-item gray-back">
+                        <div class="solution-item_num">01</div>
+                        <div class="solution-item_text">
+                            <h3>全国3.7万人のクリエイターDBから<br class="pc">
+                                <strong>最適な</strong>デザイナーをご紹介
+                            </h3>
+                            <p>フルリモート派遣なら首都圏だけでなく全国のフリーランスデザイナーの中から、お客様のニーズにマッチした最適な人材をご提供します。また、双方良ければ直接雇用への転換も可能です。</p>
+                        </div>
+                        <div class="solution-item_img">
+                            <img src="img/img-solution01.png" srcset="img/img-solution01.png 1x, img/img-solution01@2x.png 2x" alt="">
+                        </div>
+                    </div>
+                    <div class="row solution-item gray-back">
+                        <div class="solution-item_num">02</div>
+                        <div class="solution-item_text">
+                            <h3><strong>直接の業務指示</strong>ができて安心。<br>給与や保険などの手間はユウクリにお任せ</h3>
+                            <p>雇用元はユウクリになるので、給与支払いはもちろん有給の管理や保険関連といった手間が省け、業務の指示・プロジェクトの遂行に集中いただけます。</p>
+                        </div>
+                        <div class="solution-item_img">
+                            <img src="img/img-solution02.png" srcset="img/img-solution02.png 1x, img/img-solution02@2x.png 2x" alt="">
+                        </div>
+                    </div>
+                    <div class="row solution-item gray-back">
+                        <div class="solution-item_num">03</div>
+                        <div class="solution-item_text">
+                            <h3>初めての派遣でも<strong>安心</strong>。<br class="sp">
+                                派遣検定*合格コンサルタントが丁寧に<strong>サポート</strong>。</h3>
+                            <p>ユウクリには派遣検定*に合格している管理者やコンサルタントが多数在籍。初めての派遣受け入れでも、お客様ひとりひとりに寄り添った手厚いサポートを実現します</p>
+                            <p><small>＊派遣検定：人材ビジネスコンプライアンス推進協議会が開催する労働者派遣契約責任者検定</small></p>
+                        </div>
+                        <div class="solution-item_img">
+                            <img src="img/img-solution03.png" srcset="img/img-solution03.png 1x, img/img-solution03@2x.png 2x" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="service" class="scroll-item">
+            <section id="feature" class="gray-back">
+                <h2><small>サービスの特徴</small>派遣とは？</h2>
+                <div class="container">
+                    <img src="img/img-feature.png" srcset="img/img-feature.png 1x, img/img-feature@2x.png 2x" alt="フルリモート派遣の仕組み図" class="pc"><img src="img/img-feature-sp.png" srcset="img/img-feature-sp.png 1x, img/img-feature-sp@2x.png 2x" alt="フルリモート派遣の仕組み図" class="sp">
+                </div>
+            </section>
+            <section id="share">
+                <h2><small>もはや、リモート派遣は当たり前</small>広がるフルリモート<br class="sp">派遣のシェア率</h2>
+                <div class="container share-container row">
+                    <img src="img/img-share01.png" srcset="img/img-share01.png 1x, img/img-share01@2x.png 2x" alt="フルリモート派遣のシェア率 グラフ">
+                    <div class="share-text">
+                        <h3>2020年からの3年間でリモート派遣のニーズが急激に高まり、シェア率が急成長しました。
+                            現在は、<strong>ユウクリの派遣契約のうち、約30％がフルリモート派遣です</strong>。</h3>
+                        <p>ユウクリではデザイナーがリモートで就業する際のノウハウも豊富です。安心してお任せください。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="case">
+                <h2><small>ユウクリの実績をご紹介</small>具体事例</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col span-4">
+                            <img src="img/img-case01.png" srcset="img/img-case01.png 1x, img/img-case01@2x.png 2x" alt="">
+                            <div>
+                                <h3>商品ページのWEBデザイン</h3>
+                                <dl class="case-text">
+                                    <dt>業務内容</dt>
+                                    <dd>ECサイトのデザイン業務。ページデザイン、バナーデザイン、イラスト制作、商品写真の画像加工。</dd>
+                                </dl>
+                                <dl class="case-text">
+                                    <dt>条件</dt>
+                                    <dd class="case-text_terms">週4日/2日出社・2日在宅</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="col span-4">
+                            <img src="img/img-case02.png" srcset="img/img-case02.png 1x, img/img-case02@2x.png 2x" alt="">
+                            <div>
+                                <h3>HPやアプリのUIデザイン</h3>
+                                <dl class="case-text">
+                                    <dt>業務内容</dt>
+                                    <dd>大手メーカーのUIデザイン業務。自社の複数WebページのUI改善と開発中アプリのUIデザイン。</dd>
+                                </dl>
+                                <dl class="case-text">
+                                    <dt>条件</dt>
+                                    <dd class="case-text_terms">週3日/出社</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="col span-4">
+                            <img src="img/img-case03.png" srcset="img/img-case03.png 1x, img/img-case03@2x.png 2x" alt="">
+                            <div>
+                                <h3>プロモーションツール制作</h3>
+                                <dl class="case-text">
+                                    <dt>業務内容</dt>
+                                    <dd>制作会社にて各種デザイン。キャラクターグッズやパンフレット、イベントツールなど。</dd>
+                                </dl>
+                                <dl class="case-text">
+                                    <dt>条件</dt>
+                                    <dd class="case-text_terms">週5日/3日出社・2日在宅</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2><small>下記のような業務に対応します</small>仕事カテゴリー</h2>
+                <div class="container center">
+                    <table>
+                        <tr>
+                            <th>デザイン制作</th>
+                            <td>Webサイト更新・修正、 UIデザイン、LP制作、バナー制作、広告制作、販促ツールの制作、出版物制作など</td>
+                        </tr>
+                        <tr>
+                            <th>コンテンツ制作</th>
+                            <td>記事ライティング、事例インタビュー、イラスト制作、画像合成、映像・動画制作など</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <section id="flow" class="gray-back scroll-item">
+            <h2><small>就業開始まですべて<br class="sp">オンラインで完結</small>ご利用までの流れ</h2>
+            <div class="container text-center">
+                <img src="img/img-flow.png" srcset="img/img-flow.png 1x, img/img-flow@2x.png 2x" alt="お問い合わせ→ヒアリング→候補者の紹介→契約締結→就業開始" class="pc"><img src="img/img-flow-sp.png" srcset="img/img-flow-sp.png 1x, img/img-flow-sp@2x.png 2x" alt="お問い合わせ→ヒアリング→候補者の紹介→契約締結→就業開始" class="sp">
+            </div>
+            <div class="container">
+                <p>まずは当フォームからお問合せください。コンサルタントよりご連絡します。<br>
+                    業務内容やご要望をお伺いした後に、就業可能な候補者（匿名）のご紹介を行います。<br>
+                    ご紹介人材をご確認後に就業決定。契約締結をした後、就業開始します。</p>
+            </div>
+        </section>
+
+        <section id="faq" class="scroll-item">
+            <h2>よくある質問</h2>
+            <div class="container frame">
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <h3 class="faq-title">派遣料金について教えてください。</h3>
+                        <p>派遣料金は<strong>職種や業務内容により異なります</strong>ので、お気軽にお問合せください。
+                            また、正確な料金についてはヒアリング時に丁寧にご案内いたします。</p>
+                    </li>
+                    <li class="faq-item">
+                        <h3 class="faq-title">対応可能エリアはどこですか？</h3>
+                        <p>原則、<strong>東京、神奈川、千葉、埼玉に派遣先事業所がある企業様</strong>が対象となっております。</p>
+                    </li>
+                    <li class="faq-item">
+                        <h3 class="faq-title">スキルのミスマッチがないか心配です。</h3>
+                        <p>実務経験年数が3年～20年以上の<strong>経験豊富なデザイナー</strong>が登録しています。<br>
+                            デザイナー職に強い<strong>専門のキャリアアドバイザーが面談とマッチング</strong>を行っておりますので、ご安心ください。</p>
+                    </li>
+                    <li class="faq-item">
+                        <h3 class="faq-title">契約日数は何日から対応していますか？</h3>
+                        <p>通常の派遣では31日以上の契約が必要ですが、デザイン業務に関しては日雇い派遣が例外として認められておりますので、<strong>最短1日から</strong>契約が可能です。<br>
+                            依頼したい業務内容によって異なりますので、お気軽にお問合せください。</p>
+                    </li>
+                    <li class="faq-item">
+                        <h3 class="faq-title">在宅勤務いただくことも可能ですか？</h3>
+                        <p>可能です。<strong>フルリモート、出社と在宅勤務のmix</strong>など柔軟に対応しています。<br>
+                            曜日や時間などは直接ご相談のうえ弊社営業担当と共有いただければOKです。</p>
+
+                    </li>
+                    <li class="faq-item">
+                        <h3 class="faq-title">パソコンやモニターは貸与しても大丈夫ですか？</h3>
+                        <p>パソコンやモニターは派遣先様から貸与いただく場合と、候補者のご自宅の機器を利用する場合がございます。
+                            OS、アプリケーション、フォントの問題等がございますので、<strong>ヒアリング時に確認</strong>させていただきます。</p>
+                    </li>
+                    <li class="faq-item">
+                        <h3 class="faq-title">紹介予定派遣は対応していますか？</h3>
+                        <p>はい。弊社は職業紹介の免許を取得しており<strong>紹介予定派遣</strong>にも対応しておりますので、お気軽にお問合せください。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <h2><small>就業が決定するまで料金はかかりません</small>
+                デザイナーの採用課題や<br class="sp">お悩みをぜひお聞かせください</h2>
+            <div class="contactset container">
+                <a href="inquiry.html" class="contact-button">いますぐお問合せ</a>
+            </div>
+            <div class="footer-tel">
+                <h3>お急ぎの方はお電話で</h3>
+                <div><img src="img/icon-tel.png" srcset="img/icon-tel.png 1x, img/icon-tel@2x.png 2x" alt="tel"><span class="pc">03-6712-7970</span><a href="tel:0367127970" class="sp">03-6712-7970</a></div><small>（平日09:00〜18:00）</small>
+            </div>
+            <div class="footer-download">
+                <p class="footer-download_free">無料</p>
+                <p>当社サービス案内をダウンロードいただけます</p>
+                <a href="/client/service/shiryo/" class="contact-button">資料ダウンロード</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="/"><img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="ユウクリ"></a>
+                    <p>Copyright © YU-Create Co.,Ltd</p>
+                </div>
+                <ul class="footer-menu">
+                    <li class="footer-menu_item"><a href="/corporate/" target="_blank">会社概要</a></li>
+                    <li class="footer-menu_item"><a href="/corporate/profile/privacy.html" target="_blank">プライバシーポリシー</a></li>
+                    <li class="footer-menu_item"><a href="/" target="_blank" class="contact-button">デザイナーの方 ＞</a></li>
+                </ul>
+                <div class="footer-privacymark"><a href="https://privacymark.jp/" target="_blank"><img src="https://www.y-create.co.jp/shared/images/footer_privacy.jpg" alt="プライバシーマーク"></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

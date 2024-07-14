@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>【法人向け・問合せ】デザイナーのフルリモート派遣｜クリエイター専門のユウクリ</title>
+    <meta name="keywords" content="フルリモート,派遣,オンライン,問合せ">
+    <meta name="description" content="問合せフォーム│グラフィックデザイナーやWebデザイナーを始めとした、全国のデザイナーをフルリモートで派遣！お問合せから就業までオンライン完結。Webマーケティング人材不足や制作会社のリソース不足の解決法としてぜひ。">
+    <meta property="og:url" content="https://www.y-create.co.jp/client/lp/full_remote" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="【法人向け・問合せ】デザイナーのフルリモート派遣｜クリエイター専門のユウクリ" />
+    <meta property="og:description" content="問合せフォーム│グラフィックデザイナーやWebデザイナーを始めとした、全国のデザイナーをフルリモートで派遣！お問合せから就業までオンライン完結。Webマーケティング人材不足や制作会社のリソース不足の解決法としてぜひ。" />
+    <meta property="og:site_name" content="クリエイティブ人材派遣・紹介・業務委託のユウクリ" />
+    <meta property="og:image" content="img/OGP.png" />
+    <link rel="stylesheet" media="all" href="css/ress.min.css" />
+    <link rel="stylesheet" media="all" href="css/style.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/style.js"></script>
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5PNRKP');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/shared/images/favicon.ico" type="image/x-icon" />
+
+    <script>
+        $(function() {
+            var headerHeight = $('header').outerHeight();
+            var windowWidth = window.innerWidth;
+            var urlHash = location.hash;
+            if (urlHash) {
+                $('body,html').stop().scrollTop(0);
+                setTimeout(function() {
+                    var target = $(urlHash);
+                    var position = target.offset().top - 150;
+                    $('body,html').stop().animate({
+                        scrollTop: position
+                    }, 1000, 'swing');
+                }, 100);
+            }
+            $('a[href^="#"]').click(function() {
+                var speed = 400; // ミリ秒
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var w = window.innerWidth;
+                var position = target.offset().top - 150;
+
+                if (w <= 768) {
+                    $('body,html').animate({
+                        scrollTop: position
+                    }, 1000, 'swing');
+                } else {
+                    $('body,html').animate({
+                        scrollTop: position
+                    }, 1000, 'swing');
+                }
+                return false;
+            });
+
+            $(window).on("load scroll resize", function() {
+
+                var st = $(window).scrollTop();
+                var wh = $(window).height();
+
+                $('.scroll-item').each(function(i) {
+                    var tg = $(this).offset().top;
+                    var id = $(this).attr('id');
+
+                    if (st > tg - wh + (wh / 2)) {
+                        $("#navi a").removeClass("is-active");
+                        var link = $("#navi a[href *= " + id + "]");
+                        $(link).addClass("is-active");
+                    }
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body class="top">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PNRKP"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div class="container header">
+            <h1 class="header-logo"><a href="/"><img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="ユウクリ" class="header-logo_normal"><img src="img/logo-white.png" srcset="img/logo-white.png 1x, img/logo-white@2x.png 2x" alt="ユウクリ" class="header-logo_white sp"></a></h1>
+            <nav>
+                <div class="menu cross menu--2">
+                    <label>
+                        <input type="checkbox">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
+                            <path class="line--2" d="M0 50h99" />
+                            <path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
+                        </svg>
+                    </label>
+                </div>
+                <div id="navi">
+                    <ul>
+                        <li><a href="./index.html/#home" class="is-active">ホーム</a></li>
+                        <li><a href="./index.html/#service">サービスの特徴</a></li>
+                        <li><a href="./index.html/#flow">ご利用の流れ</a></li>
+                        <li><a href="./index.html/#faq">よくある質問</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-box">
+                <a href="/" class="contact-button white">デザイナーの方はこちら</a>
+                <a href="#contact" class="contact-button">お問合せ</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="home" class="scroll-item">
+        <section class="mainimg gray-back" id="mv">
+        <h1 style="text-align: center;padding-bottom:50px;">お問合せフォーム</h1>
+        </section>
+         <section id="contact">
+            <div class="container">
+<script type="text/javascript">var K3_acct = "ycreate_b";var K3_campcode = "full-remote";var K3_width = "auto";var K3_height = "auto";</script><script type="text/javascript" src="https://form.k3r.jp/embed/"></script>
+            </div>
+         </section>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="/"><img src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="ユウクリ"></a>
+                    <p>Copyright © YU-Create Co.,Ltd</p>
+                </div>
+                <ul class="footer-menu">
+                    <li class="footer-menu_item"><a href="/corporate/" target="_blank">会社概要</a></li>
+                    <li class="footer-menu_item"><a href="/corporate/profile/privacy.html" target="_blank">プライバシーポリシー</a></li>
+                    <li class="footer-menu_item"><a href="/" target="_blank" class="contact-button">デザイナーの方 ＞</a></li>
+                </ul>
+                <div class="footer-privacymark"><a href="https://privacymark.jp/" target="_blank"><img src="https://www.y-create.co.jp/shared/images/footer_privacy.jpg" alt="プライバシーマーク"></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
