@@ -283,9 +283,14 @@ nav a.is-active:before{
     display: flex;
     flex-direction: column;
 }
+
+.main-img{
+    margin-top: -6px;
+}
+
 .mainimg h1{
     order: 2;
-    font-size: 48px;
+    font-size: 21px;
     margin-bottom: 9px;
 }
 .mainimg h2{
@@ -319,20 +324,29 @@ nav a.is-active:before{
     font-weight: 700;
 }
 
+.mainimg-img{
+    text-align: center;
+}
+
 .mainimg-mvlogo{
-    order: 4;
-    margin: 70px 0 0 58px;
+    margin: 0 auto;
+    padding: 0 0 15px 0;
+    text-align: center;
+    
+    /* order: 4;
+    margin: 70px 0 0 58px; */
 }
 .mainimg-list{
-    order: 5;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 82px 0 30px;
-    font-size: 20px;
+    font-size: 10px;
     color:#49263E;
     font-weight: 700;
     list-style: none;
+    margin: 5px 0 10px;
+    padding: 0;
+    order: 5;
+    display: flex;
+    justify-content: center;
+
 }
 .mainimg-item:last-child{
     margin: 0 0 0 34px;
@@ -340,45 +354,93 @@ nav a.is-active:before{
 .mainimg-mv02{
     position: absolute;
     right: 6%;
-    top: -12%;
+    /* top: -12%; */
     width: 16.2%;
     max-width: 178px;
 }
 
+.pc-1080px{
+    display: none;
+}   
+
 
 @media screen and (min-width: 768px){
+    .mainimg h1{
+        font-size: 48px;
+    }
     .mainimg-img{
-        position: absolute;
-        right: 0;
-        bottom: 70px;
-        z-index: 1;
         width: 100%;
-        text-align: right;
+        text-align: center;
     }
     .mainimg-mv01 {
         width: calc(calc(768 / 1100) * 100%);
+        max-width: 530px;
     }
     .mainimg-mv01 {
         width: calc(calc(768 / 1080) * 100%);
+    }
+    .mainimg-list{
+        font-size:18px;
     }
 }
 
 @media screen and (min-width: 1200px){
     .mainimg-img{
         right: -100px;
+        text-align: right;
     }
+
     .mainimg-mv01 {
         width: calc(calc(768 / 1100) * 100%);
     }
+
+    /*240714追加(ロゴの表示位置切り替え、画像配置切り替え、  */
+    .mvlogo-sp{
+        display: none;
+    }
+
+    .mvlogo-pc{
+        display: block;
+    } 
+    
+    .container{
+        padding: 11px 0 33px 0;
+    }
+
+    .mainimg-img{
+        position: absolute;
+        top:0;
+    }
+
+    .mainimg-mvlogo.mvlogo-pc{
+        order:4;
+        text-align:left;
+        padding: 76px 0 0 43px;
+        margin: 0;
+    }
+    .mainimg-mv01{
+        position: absolute;
+        right:75px;
+    }
+
+    .mainimg-list{
+        display: block;
+        margin: 43px 0 33px 0;
+    }
+    .mainimg-item:last-child {
+        margin: 0;
+    }
+
+    /*追加ここまで */
+    
+
 }
 @media screen and (max-width: 768px){
 .mainimg.gray-back{
     padding: 80px 0 0 0;
     margin: 0;
 }
-.mainimg h1{
-    font-size: 24px;
-}
+
 .mainimg h2{
     font-size: 9px;
     font-family: 'Noto Sans JP','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
@@ -396,34 +458,21 @@ nav a.is-active:before{
     border-radius: 50%;
     margin-right: 5px;
 }
-.mainimg-mvlogo{
-    margin: 0 auto;
-    padding: 0 0 15px 0;
-    text-align: center;
-}
+
 .mainimg-mvlogo img{
     width: 35%;
 }
-.mainimg-list{
-    display: flex;
-    justify-content: center;
-    margin: 5px 0 10px;
-    padding: 0;
-    font-size: 10px;
-    color: #49263E;
-}
-.mainimg-item:last-child{
-    margin-left: 17px;
-}
-.mainimg-img{
-    margin-top: 15px;
-}
+
+
 .mainimg-mv01 {
+
 }
+
 .mainimg-mv02{
     right: 6%;
-    top: 1%;
+    top: 0;
     width: 25%;
+    max-width: 70px;
 }
 }
 
