@@ -571,6 +571,12 @@ section .contactset:last-child{
 #problem p{
     text-align: left;
 }
+
+#problem img{
+    height: 100%;
+    max-height: 171px;
+}
+
 #problem:after{
     content: '';
     display: block;
@@ -697,36 +703,6 @@ section .contactset:last-child{
 }
 }
 
-
-
-/*サービスの特徴
--------------------------------------*/
-.share-container{
-    align-items: center;
-    justify-content: space-between;
-    max-width: 840px;
-}
-
-
-@media screen and (min-width: 768px){
-    
-.share-container img{
-    width: 44.28%;
-}
-.share-text{
-    width: 46.1%;
-}
-}
-@media screen and (max-width: 768px){
-.share-text{
-    margin-top: 30px;
-}
-    .share-text h3{
-        font-size: 16px;
-    }
-}
-    
-
 /*具体事例
 -------------------------------------*/
 #case{
@@ -759,6 +735,11 @@ section .contactset:last-child{
 
 #case .container + h2{
     margin-top: 100px;
+}
+
+#case img{
+    height: 100%;
+    max-height: 130.48px;
 }
 
 @media screen and (max-width: 768px){
